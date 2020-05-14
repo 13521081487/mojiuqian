@@ -20,22 +20,32 @@
     }
 页面展示图片
 后台返回的类型为 image/png 的，可以直接在前端 img中的src上写上后端的服务地址，就可以打开显示图片
+
 // 可以使用img标签
+
 <img src="/yxy/test/pic2">
+
 //也可以使用embed标签
+
 <embed src="/yxy/test/pic2" type="image/png" width="100%" height="100%">
+
 页面上的pdf预览显示
 后台返回类型为 application/pdf 时：
 如果浏览器支持打开pdf，可以简单使用如下方式打开，用的是浏览器的默认控件打开
+
 <embed src="/yxy/test/pdf" type="application/pdf" width="100%" height="800">
+
 使用pdf插件 vue-pdf 打开预览
+
 vue-pdf 插件 ：https://www.npmjs.com/package/vue-pdf
 
 安装插件：npm i vue-pdf --save
+
 在使用时遇到一个问题 This dependency was not found: * @babel/runtime/regenerator in ./node_modules/_pdfjs-dist@2.2.228
 检查是否配置依赖了 「"@babel/runtime"」 ，如果没有，安装 npm i @babel/runtime --save
 
 简单使用 如下：默认只展示pdf的第一页
+
 <template>
   <pdf src="/yxy/test/pdf2"></pdf>
 </template>
