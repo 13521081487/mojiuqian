@@ -91,6 +91,6 @@
     </context>
 </generatorConfiguration>
 ```
-   [*]在generatorConfig.xml中<table>标签可以有多个
+   [*]在generatorConfig.xml中'<table>'标签可以有多个
    
    [*]这时双击在右侧Maven标签栏中的Plugins文件夹下的mybatis-generator下的mybatis-generator:generate
