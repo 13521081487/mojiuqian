@@ -14,6 +14,5 @@ Hibernate 是一个开放源代码的对象关系映射框架,他对JDBC进行�
 ```
 >3.JPA规范
 ```txt
-JPA只是一种规范,
-
+JPA只是一种规范,hibernate和toplink是基于JPA这种规范来操作数据库
 ```
